@@ -28,4 +28,4 @@
 * What does the `pass` statement do, and when to use it
 	* Used as a placeholder for future code
 * How to use `range`
-	* 1. Pass start and stop values to range() For example, range(0, 6) . Here, start=0 and stop = 6 . ...<br /> 2. Pass the step value to range() The step Specify the increment. ...<br /> 3. Use for loop to access each number. Use for loop to iterate and access a sequence of numbers returned by a range() .
+	* 1. Pass start and stop values to range() For example, range(0, 6) . Here, start=0 and stop = 6 . ...<br /> 2. Pass the step value to range() The step Specify the increment. ...<br /> 3. Use for loop to access each number. Use for loop to iterate and access a sequence of numbers returned by a range().
