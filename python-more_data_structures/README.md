@@ -52,7 +52,7 @@ Guido van Rossum hates reduce(), as we can learn from his statement in a posting
 "So now reduce(). This is actually the one I've always hated most, because, apart from a few examples involving + or *, almost every time I see a reduce() call with a non-trivial function argument, I need to grab pen and paper to diagram what's actually being fed into that function before I understand what the reduce() is supposed to do. So in my mind, the applicability of reduce() is pretty much limited to associative operators, and in all other cases it's better to write out the accumulation loop explicitly." 
 ```
 # Task
-Write a function that compues the square value of all integers of a matrix
+## 0. Write a function that compues the square value of all integers of a matrix
 * Prototype: `def square_matrix_simple(matrix=[]):`
 * `matrix` is a 2 dimensional array
 * Returns a new matrix:
