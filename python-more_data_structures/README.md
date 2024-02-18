@@ -18,8 +18,8 @@ MIXEDset = {10.0, "Hi", (11, 22, 33)}
 	* **Intersection**:<br /> The intersection of two sets is a set of elements that are shared by both sets
 	* **Discard**:<br /> Removes the specified element fro the set if it is present.
 	* **Symmetric difference**:<br /> Each of the union, intersection, difference, and symmetric difference operators listed above has an augmented assigment form can be used to modify a set.
-	* **Union**: Set Union operation. Union of 2 functions is the set of all the elements from both sets in a single different set.
-	* **Copy**: Create a new set based on an existing set, but do not want to modify the original set.
+	* **Union**:<br /> Set Union operation. Union of 2 functions is the set of all the elements from both sets in a single different set.
+	* **Copy**:<br /> Create a new set based on an existing set, but do not want to modify the original set.
 * When to use sets versus list
 	* The primary difference between list and set is that a list allows duplicate elements and maintains their order, while a set ensures element uniqueness without any guaranteed order. Since lists are ordered, position indexing is allowed in them. However, in unordered items like sets, positional indexing is not possible.
 * How to iterate into a set
@@ -51,6 +51,7 @@ Guido van Rossum hates reduce(), as we can learn from his statement in a posting
 
 "So now reduce(). This is actually the one I've always hated most, because, apart from a few examples involving + or *, almost every time I see a reduce() call with a non-trivial function argument, I need to grab pen and paper to diagram what's actually being fed into that function before I understand what the reduce() is supposed to do. So in my mind, the applicability of reduce() is pretty much limited to associative operators, and in all other cases it's better to write out the accumulation loop explicitly." 
 ```
+# Task
 Write a function that compues the square value of all integers of a matrix
 * Prototype: `def square_matrix_simple(matrix=[]):`
 * `matrix` is a 2 dimensional array
