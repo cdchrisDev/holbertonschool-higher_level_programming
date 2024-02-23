@@ -12,4 +12,5 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = size #__size: private class attr must have '__'
+            self.__size = size
+            # __size: private class attr must have '__'
