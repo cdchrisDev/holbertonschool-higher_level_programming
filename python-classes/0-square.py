@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Square defined as a class"""
 class Square
-    """str: Docstring *after* attribute, with type specified."""
+    """An empty class"""
     pass
