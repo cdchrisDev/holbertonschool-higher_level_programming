@@ -3,12 +3,10 @@
 
 
 class Square:
-    """INIT method init a square class
-    Args:
-        size: size of square
-    """
+    """INIT method init a square"""
+
     def __init__(self, size=0):
-        self.size = size
+        self.__size = size
 
     @property
     def size(self):
