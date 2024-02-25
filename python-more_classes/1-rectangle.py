@@ -5,7 +5,7 @@
 class Rectangle:
     """ Defining a rectangle """
 
-    def __init__(self, width=0, height=0)
+    def __init__(self, width=0, height=0)o:
         """ INIT rectangle """
 
         self.width = width
@@ -29,7 +29,6 @@ class Rectangle:
     def height(self):
         """ height getter """
         return self.__height
-
 
     @height.setter
     def height(self, value):
