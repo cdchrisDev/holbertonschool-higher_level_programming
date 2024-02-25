@@ -77,7 +77,7 @@
 
 #ZeroDivisionError
 
-    ### div can’t be equal to 0
+    ### div cant be equal to 0
 
     >>> matrix = [[1, 2, 3], [4, 5, 6]]
     >>> matrix_divided(matrix, 0)
