@@ -17,7 +17,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_error(self):
         """ Error testing """
-        with self.asserRaises(TypeError):
+        with self.assertRaises(TypeError):
             max_integer(['n', 8, 10])
 
     def test_none(self):
