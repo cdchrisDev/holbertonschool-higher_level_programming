@@ -15,6 +15,13 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """
         Base now has attr of rectangles accordingly
+
+        Args:
+            width (int)
+            height (int)
+            x (int)
+            y (int)
+            id ([type])
         """
         super().__init__(id)
 
