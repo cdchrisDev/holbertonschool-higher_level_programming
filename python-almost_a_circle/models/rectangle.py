@@ -8,8 +8,9 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    Almost a copy of base, but we call it
-    inheritance
+    Rectangle: Class inherited from base
+
+    Args: Base (class): parent
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -19,9 +20,9 @@ class Rectangle(Base):
         Args:
             width (int)
             height (int)
-            x (int)
-            y (int)
-            id ([type])
+            x (int): default 0
+            y (int): default 0
+            id ([type]): Default None
         """
         super().__init__(id)
 
