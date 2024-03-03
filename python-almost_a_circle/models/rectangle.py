@@ -93,7 +93,7 @@ class Rectangle(Base):
 
     def area(self):
         """ get area """
-        
+
         return self.height * self.width
 
     def display(self):
