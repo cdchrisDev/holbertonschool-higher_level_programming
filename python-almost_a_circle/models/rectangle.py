@@ -85,11 +85,11 @@ class Rectangle(Base):
     def y(self, y):
         """ set the y value """
 
-        if type(value) != int:
+        if type(y) != int:
             raise TypeError("y must be an integer")
-        if value < 0:
+        if y < 0:
             raise ValueError("y must be > 0")
-        self.__y = value
+        self.__y = y
 
     def area(self):
         """ get area """
@@ -102,3 +102,9 @@ class Rectangle(Base):
         for h in range(self.height):
             print(' ' * self.x, end="")
             print('#' * self.width)
+
+    def __str__(self):
+    '''returns string rep of rectangle '''
+    a, d, e = self.id, self.width, self.height
+    b, c = self.x, self.y
+    return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
