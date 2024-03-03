@@ -6,15 +6,13 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """
-    Rectangle: Class inherited from base
+    """Rectangle: Class inherited from base
 
     Args: Base (class): parent
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """
-        __init__ initialized constructor
+        """__init__ initialized constructor
 
         Args:
             width (int)
