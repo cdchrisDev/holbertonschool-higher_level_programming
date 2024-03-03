@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
 A class Inherited from the moduls.base module
-"""
-
+"""wq
 from models.base import Base
 
 
