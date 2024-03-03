@@ -95,3 +95,10 @@ class Rectangle(Base):
         """ get area """
         
         return self.height * self.width
+
+    def display(self):
+        '''print Rectangle to stdout'''
+        print('\n' * self.y, end="")
+        for h in range(self.height):
+            print(' ' * self.x, end="")
+            print('#' * self.width)
