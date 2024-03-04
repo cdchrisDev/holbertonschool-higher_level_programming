@@ -21,4 +21,3 @@ class Square(Rectangle):
 
         return "[square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.height)
-
