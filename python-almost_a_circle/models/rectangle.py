@@ -98,13 +98,12 @@ class Rectangle(Base):
 
     def display(self):
         '''print Rectangle to stdout'''
-        for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
-            print()
+        [print() for space in range(self.y)]
+        [print(" " * self.x + '#' * self.width)
+         for line in range(self.height)]
 
     def __str__(self):
-        '''returns string rep of rectangle '''
+        '''returns string rep of rectangle'''
         a, d, e = self.id, self.width, self.height
         b, c = self.x, self.y
         return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
