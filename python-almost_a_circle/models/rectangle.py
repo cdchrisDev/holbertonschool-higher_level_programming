@@ -94,17 +94,17 @@ class Rectangle(Base):
     def area(self):
         """ get area """
 
-        return self.height * self.width
+        return self.width * self.height
 
     def display(self):
         '''print Rectangle to stdout'''
-        print('\n' * self.y, end="")
-        for h in range(self.height):
-            print(' ' * self.x, end="")
-            print('#' * self.width)
+        for i  in range(self.height):
+            for j in range(self.width):
+                print("#", end="")
+            print()
 
     def __str__(self):
-    '''returns string rep of rectangle '''
-    a, d, e = self.id, self.width, self.height
-    b, c = self.x, self.y
-    return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
+        '''returns string rep of rectangle '''
+        a, d, e = self.id, self.width, self.height
+        b, c = self.x, self.y
+        return("[Rectangle] ({}) {}/{} - {}/{}".format(a, b, c, d, e))
