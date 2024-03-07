@@ -188,7 +188,7 @@ def only_diff_elements(set_1, set_2):
 ## 5. Write a function that returns the number of keys in a dictionary.
 * **Prototype**: `def number_keys(a_dictionary):`
 * You are not allowed to import any module
-````
+```
 guillaume@ubuntu:~/$ cat 5-main.py
 #!/usr/bin/python3
 number_keys = __import__('5-number_keys').number_keys
