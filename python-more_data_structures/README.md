@@ -238,3 +238,212 @@ def print_sorted_dictionary(a_dictionary):
         print("{:s}: {}".format(new_ls[i], a_dictionary[new_ls[i]]))
 
 ```
+## 7. Write a function that replaces or adds key/value in a dictionary.
+* **Prototype**: `def update_dictionary(a_dictionary, key, value):`
+* `key` argument will be always a string
+* `value` argument will be any type
+* If a key exists in the dictionary, the value will be replaced
+* If a key doesn’t exist in the dictionary, it will be created
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/$ cat 7-main.py
+#!/usr/bin/python3
+update_dictionary = __import__('7-update_dictionary').update_dictionary
+print_sorted_dictionary = __import__('6-print_sorted_dictionary').print_sorted_dictionary
+
+a_dictionary = { 'language': "C", 'number': 89, 'track': "Low level" }
+new_dict = update_dictionary(a_dictionary, 'language', "Python")
+print_sorted_dictionary(new_dict)
+print("--")
+print_sorted_dictionary(a_dictionary)
+
+print("--")
+print("--")
+
+new_dict = update_dictionary(a_dictionary, 'city', "San Francisco")
+print_sorted_dictionary(new_dict)
+print("--")
+print_sorted_dictionary(a_dictionary)
+
+guillaume@ubuntu:~/$ ./7-main.py
+language: Python
+number: 89
+track: Low level
+--
+language: Python
+number: 89
+track: Low level
+--
+--
+city: San Francisco
+language: Python
+number: 89
+track: Low level
+--
+city: San Francisco
+language: Python
+number: 89
+track: Low level
+guillaume@ubuntu:~/$ 
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def update_dictionary(a_dictionary, key, value):
+    a_dictionary[key] = value
+    return a_dictionary
+```
+## 8. Write a function that deletes a key in a dictionary.
+* **Prototype**: `def simple_delete(a_dictionary, key=""):`
+* `key` argument will be always a string
+* If a key doesn’t exist, the dictionary won’t change
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/$ cat 8-main.py
+#!/usr/bin/python3
+simple_delete = __import__('8-simple_delete').simple_delete
+print_sorted_dictionary = \
+    __import__('6-print_sorted_dictionary').print_sorted_dictionary
+
+a_dictionary = { 'language': "C", 'Number': 89, 'track': "Low", 'ids': [1, 2, 3] }
+new_dict = simple_delete(a_dictionary, 'track')
+print_sorted_dictionary(a_dictionary)
+print("--")
+print_sorted_dictionary(new_dict)
+
+print("--")
+print("--")
+new_dict = simple_delete(a_dictionary, 'c_is_fun')
+print_sorted_dictionary(a_dictionary)
+print("--")
+print_sorted_dictionary(new_dict)
+
+guillaume@ubuntu:~/$ ./8-main.py
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+--
+Number: 89
+ids: [1, 2, 3]
+language: C
+guillaume@ubuntu:~/$ 
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def simple_delete(a_dictionary, key=""):
+    if key in a_dictionary:
+        del a_dictionary[key]
+    return a_dictionary
+```
+## 9. Write a function that returns a new dictionary with all values multiplied by 2
+* **Prototype**: `def multiply_by_2(a_dictionary):`
+* You can assume that all values are only integers
+* Returns a new dictionary
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/$ cat 9-main.py
+#!/usr/bin/python3
+multiply_by_2 = __import__('9-multiply_by_2').multiply_by_2
+print_sorted_dictionary = \
+    __import__('6-print_sorted_dictionary').print_sorted_dictionary
+
+a_dictionary = {'John': 12, 'Alex': 8, 'Bob': 14, 'Mike': 14, 'Molly': 16}
+new_dict = multiply_by_2(a_dictionary)
+print_sorted_dictionary(a_dictionary)
+print("--")
+print_sorted_dictionary(new_dict)
+
+guillaume@ubuntu:~/$ ./9-main.py
+Alex: 8
+Bob: 14
+John: 12
+Mike: 14
+Molly: 16
+--
+Alex: 16
+Bob: 28
+John: 24
+Mike: 28
+Molly: 32
+guillaume@ubuntu:~/$ 
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def multiply_by_2(a_dictionary):
+    new_ls = a_dictionary.copy()
+    key = list(new_ls.keys())
+    [new_ls[key[i]]for i in range(len(key))]
+    return new_ls
+
+```
+## 10. Write a function that returns a key with the biggest integer value.
+* **Prototype**: `def best_score(a_dictionary):`
+* You can assume that all values are only integers
+* If no score found, return `None`
+* You can assume all students have a different score
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/$ cat 10-main.py
+#!/usr/bin/python3
+best_score = __import__('10-best_score').best_score
+
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+best_key = best_score(a_dictionary)
+print("Best score: {}".format(best_key))
+
+best_key = best_score(None)
+print("Best score: {}".format(best_key))
+
+guillaume@ubuntu:~/$ ./10-main.py
+Best score: Molly
+Best score: None
+guillaume@ubuntu:~/$
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def best_score(a_dictionary):
+    if a_dictionary is None or a_dictionary == {}:
+        return None
+    key = list(a_dictionary.keys())
+    score = key[0]
+    for i in range(len(key)):
+        if a_dictionary[score] >= a_dictionary[key[i]]:
+            continue
+        else:
+            score = key[i]
+    return score
+```
+## 11. Write a function that returns a list with all values multiplied by a number without using any loops.
+* **Prototype**: `def multiply_list_map(my_list=[], number=0):
+Returns a new list:
+Same length as my_list
+Each value should be multiplied by number
+Initial list should not be modified
+You are not allowed to import any module
+You have to use map
+Your file should be max 3 lines
+guillaume@ubuntu:~/$ cat 11-main.py
+#!/usr/bin/python3
+multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
+
+my_list = [1, 2, 3, 4, 6]
+new_list = multiply_list_map(my_list, 4)
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/$ ./11-main.py
+[4, 8, 12, 16, 24]
+[1, 2, 3, 4, 6]
+guillaume@ubuntu:~/$ 
