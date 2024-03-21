@@ -153,7 +153,7 @@ for letter in range(ord('a'), ord('z') + 1):
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
 
-´´´
+```
 guillaume@ubuntu:~/$ ./3-print_alphabt.py
 abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
 ```
