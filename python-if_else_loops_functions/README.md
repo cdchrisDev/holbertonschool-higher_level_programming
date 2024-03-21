@@ -42,6 +42,7 @@ You don’t have to understand what ´import´, ´random .  ´randint´ do. Plea
 	2. if the number is 0: is zero
 	3. if the number is less than 0: is negative
 	* followed by a new line
+
 ´´´
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
 -4 is negative
