@@ -152,6 +152,7 @@ for letter in range(ord('a'), ord('z') + 1):
 * You can only use one loop in your code
 * You are not allowed to store characters in a variable
 * You are not allowed to import any module
+
 ´´´
 guillaume@ubuntu:~/$ ./3-print_alphabt.py
 abcdfghijklmnoprstuvwxyzguillaume@ubuntu:~/$
@@ -169,6 +170,7 @@ for letter in range(ord("a"), ord("z") + 1):
 * You can only use one loop in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
+
 ```
 guillaume@ubuntu:~/$ ./4-print_hexa.py
 0 = 0x0
@@ -211,6 +213,7 @@ for number in range(0, 99):
 * You can only use one loop in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
+
 ```
 guillaume@ubuntu:~/$ ./5-print_comb2.py
 00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99
@@ -235,6 +238,7 @@ digits
 * You can only use no more than 2 loops in your code
 * You are not allowed to store numbers or strings in a variable
 * You are not allowed to import any module
+
 ```
 guillaume@ubuntu:~/$ ./6-print_comb3.py
 01, 02, 03, 04, 05, 06, 07, 08, 09, 12, 13, 14, 15, 16, 17, 18, 19, 23, 24, 25, 26, 27, 28, 29, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 56, 57, 58, 59, 67, 68, 69, 78, 79, 89
@@ -262,6 +266,7 @@ You are not allowed to import any module
 You are not allowed to use ´str.upper()´ and ´str.isupper()´
 [Tips: ord()](https://intranet.hbtn.io/rltoken/XOCJIEYRrBmRMeMXb1UD7w)
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 7-main.py
 #!/usr/bin/env python3
@@ -298,6 +303,7 @@ def islower(c):
 * You are not allowed to use ´str.upper()´ and ´str.isupper()´
 * [Tips: ord()](https://intranet.hbtn.io/rltoken/XOCJIEYRrBmRMeMXb1UD7w)
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 8-main.py
 #!/usr/bin/env python3
@@ -326,6 +332,7 @@ Prototype: ´def print_last_digit(number):´
 Returns the value of the last digit
 You are not allowed to import any module
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 9-main.py
 #!/usr/bin/env python3
@@ -355,6 +362,7 @@ def print_last_digit(number):
 * Returns the value of ´a + b´
 * You are not allowed to import any module
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 10-main.py
 #!/usr/bin/env python3
@@ -381,6 +389,7 @@ def add(a, b):
 * Returns the value of ´a ^ b´
 * You are not allowed to import any module
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/env python3
@@ -413,6 +422,7 @@ def pow(a, b):
 * Each element should be followed by a space
 * You are not allowed to import any module
 You don’t need to understand ´__import__´
+
 ```
 guillaume@ubuntu:~/$ cat 12-main.py
 #!/usr/bin/env python3
