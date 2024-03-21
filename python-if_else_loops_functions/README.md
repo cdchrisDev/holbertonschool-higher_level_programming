@@ -43,7 +43,7 @@ You don’t have to understand what ´import´, ´random .  ´randint´ do. Plea
 	3. if the number is less than 0: is negative
 	* followed by a new line
 
-´´´
+```
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
 -4 is negative
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
@@ -63,9 +63,9 @@ guillaume@ubuntu:~/$ ./0-positive_or_negative.py
 guillaume@ubuntu:~/$ ./0-positive_or_negative.py 
 5 is positive
 guillaume@ubuntu:~/$ 
-´´´
+```
 **SOLVED**
-´´´
+```
 #!/usr/bin/python3
 import random
 number = random.randint(-10, 10)
@@ -75,7 +75,7 @@ elif number < 0:
     print('{} is negative'.format(number))
 else:
     print('{} is zero'.format(number))
-´´´
+```
 ## 1. This program will assign a random signed number to the variable ´number´ each time it is executed. Complete the source code in order to print the last digit of the number stored in the variable ´number´.
 
 * You can find the source code [here](https://intranet.hbtn.io/rltoken/UdohgX1ToNOVf4cAa3KJxA)
