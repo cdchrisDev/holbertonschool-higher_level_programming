@@ -426,14 +426,45 @@ def best_score(a_dictionary):
     return score
 ```
 ## 11. Write a function that returns a list with all values multiplied by a number without using any loops.
-* **Prototype**: `def multiply_list_map(my_list=[], number=0):
-Returns a new list:
-Same length as my_list
-Each value should be multiplied by number
-Initial list should not be modified
-You are not allowed to import any module
-You have to use map
-Your file should be max 3 lines
+* **Prototype**: `def multiply_list_map(my_list=[], number=0):`
+* Returns a new list:
+    * Same length as `my_list`
+    * Each value should be multiplied by `number`
+* Initial list should not be modified
+* You are not allowed to import any module
+* You have to use `map`
+* Your file should be max 3 lines
+```
+guillaume@ubuntu:~/$ cat 11-main.py
+#!/usr/bin/python3
+multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
+
+my_list = [1, 2, 3, 4, 6]
+new_list = multiply_list_map(my_list, 4)
+print(new_list)
+print(my_list)
+
+guillaume@ubuntu:~/$ ./11-main.py
+[4, 8, 12, 16, 24]
+[1, 2, 3, 4, 6]
+guillaume@ubuntu:~/$
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def multiply_list_map(my_list=[], number=0):
+    return list(map(lambda x: x * number, my_list))
+```
+## 12. Write a function that returns a list with all values multiplied by a number without using any loops.
+* Prototype: `def multiply_list_map(my_list=[], number=0):`
+* Returns a new list:
+    * Same length as `my_list`
+    * Each value should be multiplied by `number`
+* Initial list should not be modified
+* You are not allowed to import any module
+* You have to use `map`
+* Your file should be max 3 lines
+```
 guillaume@ubuntu:~/$ cat 11-main.py
 #!/usr/bin/python3
 multiply_list_map = __import__('11-multiply_list_map').multiply_list_map
@@ -447,3 +478,26 @@ guillaume@ubuntu:~/$ ./11-main.py
 [4, 8, 12, 16, 24]
 [1, 2, 3, 4, 6]
 guillaume@ubuntu:~/$ 
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def roman_to_int(roman_string):
+    rom_dict = {
+        'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100,
+        'D': 500, 'M': 1000, 'IV': 4, 'IX': 9, 'XL': 40,
+        'XC': 90, 'CD': 400, 'CM': 900
+    }
+    num = 0
+    i = 0
+    if not isinstance(roman_string, str) or roman_string is None:
+        return 0
+    while i < len(roman_string):
+        if roman_string[i:i+2] in rom_dict:
+            num += rom_dict[roman_string[i:i+2]]
+            i = i + 2
+        else:
+            num += rom_dict[roman_string[i]]
+            i = i + 1
+    return num
+```
