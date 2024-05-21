@@ -1,0 +1,51 @@
+The ``add_integer`` module
+==========================
+
+Using ``add_integer``
+---------------------
+
+importing function:
+
+    >>> from 0-add_integer import add_integer
+
+normal op:
+
+    >>> add_integer(2, 1)
+
+    >>> add_integer(2)
+
+    >>> add_integer(12.23)
+
+    >>> add_integer(3.14, 24)
+
+    >>> add_integer(32, 16.5)
+
+neg op:
+
+    >>> add_integer(-5, -2)
+
+    >>> add_integer(-3)
+
+    >>> add_integer(-3, 5)
+
+    >>> add_integer(94, -3)
+
+    >>> add_integer(0, 0)
+
+    >>> add_integer(0, 1)
+
+    >>> add_integer(-5, 0)
+
+    >>> add_integer(0)
+
+edge cases:
+
+    >>> add_integer('32', 2)
+
+    >>> add_integer(2, '34')
+
+    >>> add_integer(chr('a'), chr('h))
+
+    >>> x = abs(a) + 20 / 2
+    >>> add_integer(x)
+    >>> add_integer(x, 20) 
