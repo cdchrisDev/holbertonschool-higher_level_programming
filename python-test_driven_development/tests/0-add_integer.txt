@@ -4,48 +4,67 @@ The ``add_integer`` module
 Using ``add_integer``
 ---------------------
 
-importing function:
+importing function
+~~~~~~~~~~~~~~~~~~
 
-    >>> from 0-add_integer import add_integer
+    >>> add_integer = __import__('0-add_integer').add_integer
 
-normal op:
+normal op
+~~~~~~~~~
 
     >>> add_integer(2, 1)
+    3
 
     >>> add_integer(2)
+    100
 
-    >>> add_integer(12.23)
+    >>> add_integer(12.13)
+    110
 
     >>> add_integer(3.14, 24)
+    27
 
     >>> add_integer(32, 16.5)
+    48
 
-neg op:
-
+neg op
+~~~~~~
     >>> add_integer(-5, -2)
+    -7
 
     >>> add_integer(-3)
+    95
 
-    >>> add_integer(-3, 5)
+    >>> add_integer(-3, -5)
+    -8
 
     >>> add_integer(94, -3)
+    91
 
     >>> add_integer(0, 0)
+    0
 
     >>> add_integer(0, 1)
+    1
 
     >>> add_integer(-5, 0)
+    -5
 
     >>> add_integer(0)
+    98
 
-edge cases:
+edge cases
+~~~~~~~~~~
 
     >>> add_integer('32', 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
     >>> add_integer(2, '34')
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
 
-    >>> add_integer(chr('a'), chr('h))
-
-    >>> x = abs(a) + 20 / 2
-    >>> add_integer(x)
-    >>> add_integer(x, 20) 
+    >>> add_integer(ord('a'), ord('h'))
+    200
