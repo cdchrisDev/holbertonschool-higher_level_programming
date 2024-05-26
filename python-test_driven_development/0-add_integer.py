@@ -9,6 +9,7 @@ def add_integer(a, b=98):
         b ((int), (float)): second arg. Default to 98
         
         return: result op
+    
     """
     if isinstance(a, (float, int)) is False:
         raise TypeError("a must be an integer".format(a))
