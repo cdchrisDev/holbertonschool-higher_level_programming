@@ -13,7 +13,7 @@ def convert_csv_to_json(csvFile):
         data.json: json file to write to
     """
 
-    ## create dict
+    # create dict
     data = []
 
     try:
@@ -26,6 +26,6 @@ def convert_csv_to_json(csvFile):
     try:
         with open("data.json", "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4)
-    except:
+    except Exception:
         return False
     return True
