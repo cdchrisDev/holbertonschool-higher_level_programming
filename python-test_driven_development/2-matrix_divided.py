@@ -10,13 +10,13 @@ def matrix_divided(matrix, div):
     Function that divides a matrix
     """
 
-    if type(matrix) is not list:
+    if type(matrix) != list:
         raise TypeError("matrix must be a matrix(list of list) of
                         integers/floats")
     for item in range(len(matrix)):
         if item != 0:
             result = item - 1
-            if len(matrix[item]) is not len(matrix[result]):
+            if len(matrix[item]) != len(matrix[result]):
                 raise TypeError("Each row of the matrix
                                 must have the same size")
     if isinstance(div, int) is False:
