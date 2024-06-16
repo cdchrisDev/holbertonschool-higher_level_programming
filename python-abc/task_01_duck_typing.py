@@ -27,7 +27,7 @@ class Circle(Shape):
     """A class that define Circle
     base on Shape
     """
-    def __init__(self, radius=0):
+    def __init__(self, radius):
         """Instan"""
         self.radius = radius
 
