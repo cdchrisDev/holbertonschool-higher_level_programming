@@ -14,19 +14,23 @@ class Animal(metaclass=ABCMeta):
     def sound(self):
         """A general sound method"""
         pass
-    
+
+
 class Dog(Animal):
     """A class that define a Dog base
     on Animal class
     """
-    
+
     def sound(self):
+        """The sound of dog"""
         return "Bark"
-    
+
+
 class Cat(Animal):
     """A class that define a cat base
     on Animal class
     """
-    
+
     def sound(self):
+        """The sound of cat"""
         return "Meow"
