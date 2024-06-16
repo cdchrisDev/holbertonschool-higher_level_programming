@@ -2,11 +2,11 @@
 """This is the task_01_duck_typing
 Module
 """
-from abc import ABCMeta, abstractmethod
+from abc import ABC, abstractmethod
 import math
 
 
-class Shape(metaclass=ABCMeta):
+class Shape(ABC):
     """An abstract class that define
     de variations of a Shape class
     """
@@ -37,6 +37,7 @@ class Circle(Shape):
 
     def perimeter(self):
         """circle perimeter"""
+        if self.perimeter
         return 2 * math.pi * self.radius
 
 
