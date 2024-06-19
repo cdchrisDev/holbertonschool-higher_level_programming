@@ -28,15 +28,18 @@ class CustomObject:
     def serialize(self, filename):
         """A func to serialize"""
         try:
-            return pickle.dump(self, open(filename, "wb"))
+            cls = pickle.dump(self, open(filename, "wb"))
         except FileNotFoundError:
             return None
+        finally:
+            return cls
 
     @classmethod
     def deserialize(cls, filename):
         """A func to deserialize"""
         try:
             cls = pickle.load(open(filename, 'rb'))
-            return cls
         except FileNotFoundError:
             return None
+        finally:
+            return cls
