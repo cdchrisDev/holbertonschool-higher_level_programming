@@ -1,1 +1,17 @@
-# Hello world
+# This is the Hello World Module (1/29)
+### Python programming:
+* [The Python Tutorial](https://intranet.hbtn.io/rltoken/dPj0pQKl_4ZuRk8oY_s6Wg)
+* [Python Programming: An Introduction to Computer Science 3rd edition](https://intranet.hbtn.io/rltoken/m80k_C-bYzBqNccbtzY2Dg)
+* [Derek Banas’ Learn to program](https://intranet.hbtn.io/rltoken/TWiTNHadpWuoKDZwWsVXvA)
+* [The Python Guru](https://intranet.hbtn.io/rltoken/9EJwb1y3Ha3aVgaM45z8XA)
+* [New string formatting](https://intranet.hbtn.io/rltoken/wz0Dq997wZFpwaFo3UhAdw)
+* [Garbage collector](https://intranet.hbtn.io/rltoken/IV19HD5WnZhvtNA59lW5-Q)
+* [Python Interpreter](https://intranet.hbtn.io/rltoken/tHi0CphPU6xA2VGvVfVevA)
+* [Python bytecode](https://intranet.hbtn.io/rltoken/a4gn69uDQzfTiBGCKPbxDw)
+### Resources
+* [Learn to Program](https://intranet.hbtn.io/rltoken/n9ts_nUw1YtCR9BZtGrHdQ)
+* [Whetting Your Appetite](https://intranet.hbtn.io/rltoken/9w2S6R8vtwlmQcPg33445w)
+* [Using the Python Interpreter](https://intranet.hbtn.io/rltoken/O87tA-o6pQ8HXAl93xxGGA)
+* [An Informal Introduction to Python](https://intranet.hbtn.io/rltoken/x1m4AhQ1Vy9eUBaXFLRHPQ)
+* [How To Use String Formatters in Python 3](https://intranet.hbtn.io/rltoken/dd7bIKsC3_0wb3Np_8URUA)
+* [Pycodestyle – Style Guide for Python Code](https://intranet.hbtn.io/rltoken/qHCPZY23PoEBaDVce2P0nw)
