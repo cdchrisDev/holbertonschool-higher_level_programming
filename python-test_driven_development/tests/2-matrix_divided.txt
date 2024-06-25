@@ -1,79 +1,45 @@
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
-Tests for text_indentation in 0-add_integer.py
-===================================================
+test1 List of Lists of integers / div= integer:
+    >>> matrix_divided([[2, 4], [6, 8]], 2)
+    [[1.0, 2.0], [3.0, 4.0]]
 
->>> add_integer = __import__ ('0-add_integer').add_integer
+test2 List of Lists of integers / div=str:
+    >>> matrix_divided([[1, 2], [3, 4]], "3")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
 
->>> add_integer(1, 2)
-3
+test 3 List of Lists of integers / div=0:
+    >>> matrix_divided([[3, 9], [12, 15]], 0)
+    Traceback (most recent call last):
+    ...
+    ZeroDivisionError: division by zero
 
->>> add_integer(100, -2)
-98
+test4 List of Lists of integers=str / div=int:
+    >>> matrix_divided([["2", 4], ["6", 8]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
->>> add_integer(2)
-100
+test5 list whit different size:
+    >>> matrix_divided([[2, 4], [6, 8, 10]], 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: Each row of the matrix must have the same size
 
->>> add_integer(100.3, -2)
-98
+test5 Float overflow:
+    >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
+    [[0.0, 0.0], [0.0, 0.0]]
 
->>> add_integer(10, 3.7)
-13
+test6 one argument:
+    >>> matrix_divided([[1, 2], [4, 6]])
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 1 required positional argument: 'div'
 
->>> add_integer(69, 42)
-111
-
->> add_integer(inf)
-inf
-
->>> add_integer(float('nan'))
-Traceback (most recent call last):
-...
-ValueError: cannot convert float NaN to integer
-
->>> add_integer(9223372036854775807, 1)
-9223372036854775808
-
->>> add_integer('hello', 43)
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer(23, 'holberton')
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer(None, 'holberton')
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer('12a', 'Zoref')
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer(23, None)
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer(23, [1, 2, 3])
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
-
->>> add_integer([3, 4, 5])
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer([])
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
-
->>> add_integer(float('inf'))
-Traceback (most recent call last):
-...
-OverflowError: cannot convert float infinity to integer
+test7 No arguments:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
