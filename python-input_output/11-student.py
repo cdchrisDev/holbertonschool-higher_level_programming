@@ -26,7 +26,7 @@ class Student:
             return ret_dict
         else:
             return self.__dict__
-        
+
     def reload_from_json(self, json):
         self.first_name = json.get("first_name", "J")
         self.last_name = json.get("last_name", "S")
