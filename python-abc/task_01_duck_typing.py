@@ -29,7 +29,7 @@ class Circle(Shape):
     """
     def __init__(self, radius):
         """Instan"""
-        self.radius = radius if radius > 0 else 0
+        self.radius = radius
 
 
     def area(self):
@@ -38,6 +38,8 @@ class Circle(Shape):
 
     def perimeter(self):
         """circle perimeter"""
+        if self.radius < 0:
+            return None
         return 2 * math.pi * self.radius
 
 
