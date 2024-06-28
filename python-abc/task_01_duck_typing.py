@@ -29,7 +29,8 @@ class Circle(Shape):
     """
     def __init__(self, radius):
         """Instan"""
-        self.radius = radius
+        self.radius = radius if radius > 0 else 0
+
 
     def area(self):
         """circle radius"""
