@@ -29,8 +29,7 @@ class CustomObject:
         """A func to serialize"""
         try:
             return pickle.dump(self, open(filename, "wb"))
-        except:
-            raise FileNotFoundError
+        except FileNotFoundError:
             return None
 
     @classmethod
