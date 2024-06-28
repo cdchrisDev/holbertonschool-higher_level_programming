@@ -43,4 +43,3 @@ class CustomObject:
                 return pickle.load(Rf)
         except FileNotFoundError:
             return None
-        return cls
