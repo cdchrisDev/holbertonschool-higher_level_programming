@@ -16,7 +16,7 @@ class Student:
         """Retrieves dict rep of self"""
 
         ret_dict = {}
-        if type(attrsS) is list:
+        if type(attrs) is list:
             for item in attrs:
                 if type(item) is not str:
                     return self.__dict__
@@ -26,3 +26,8 @@ class Student:
             return ret_dict
         else:
             return self.__dict__
+        
+    def reload_from_json(self, json):
+        self.first_name = json.get("first_name", "J")
+        self.last_name = json.get("last_name", "S")
+        self.age = json.get("age", 1)
