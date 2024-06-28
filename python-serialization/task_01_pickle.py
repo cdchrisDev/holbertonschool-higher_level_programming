@@ -31,8 +31,8 @@ class CustomObject:
             # return pickle.dump(self, open(filename, "wb"))
             with open(filename, "wb") as Wf:
                 pickle.dump(self, Wf)
-        except FileNotFoundError:
-            return None
+        except Exception:
+            print("Error Pickling")
 
     @classmethod
     def deserialize(cls, filename):
@@ -41,5 +41,6 @@ class CustomObject:
             # cls = pickle.load(open(filename, 'rb'))
             with open(filename, "rb") as Rf:
                 return pickle.load(Rf)
-        except FileNotFoundError:
+        except Exception:
+            print("Error_depickling")
             return None
