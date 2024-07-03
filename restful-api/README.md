@@ -21,7 +21,11 @@ At the end of this exercise, students should be able to:
 3. [List of HTTP status codes](https://intranet.hbtn.io/rltoken/vAPbpS8hUG2BFS4RcGx1WQ)
 ### Expected Output
 1. A brief summary explaining the differences between HTTP and HTTPS.
+	* HTTP *(Hypertext transfer protocol)* Is a technology that power almost every communication on the internet, and the other version HTTPS, it's an extension of HTTP that encrypts every transaction made.
 2. A depiction or outline of the structure of an HTTP request and response.
+	
 3. Lists of common HTTP methods and status codes with their descriptions and possible use cases. For example:
-	* Method: GET, Description: Retrieves data, Use case: Fetching a web page or data from an API.
-	* Status Code: 404, Description: Not Found, Scenario: When a requested page or resource isn’t available on the server.
+        * **GET: Read**                                                         + 200 (OK) list of entities. Use pagination, sorting and filtering to navigate big lists.                                       + 404 (Not found)
+        * **POST: Create**                                                      + 201 (Created), Response contains response similar to GET /user/{id} containing new ID.                                * **PATCH: Update**                                                     + [Batch API](https://doc.oroinc.com/api/batch-api/#web-services-api-batch-api)
+        * **DELETE: Delete**                                                    + 204 (No Content).                                             + 400 (Bad Request) if no filter is specified.
+        * **PUT: Create/Replace**
