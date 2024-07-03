@@ -10,7 +10,8 @@ The Representational State Transfer (REST) architecture is a set of constraints 
 6. **API Security & Authentication**: Address the crusial aspects of security, knowing how to protect data transactions and ensure only authorized access to resources
 7. **API Standards & Documentation with OpenAPI**: standardized documentation is important to delivery API usage, understand and mantain the projects
 # Tasks
-## Objective:
+## 00
+### Objective:
 At the end of this exercise, students should be able to:
 1. Differentiate between HTTP and HTTPS.
 2. Understand the basic working and structure of HTTP requests and responses.
@@ -36,3 +37,21 @@ At the end of this exercise, students should be able to:
 	+ 204 (No Content).
 	+ 400 (Bad Request) if no filter is specified.
 * **PUT: Create/Replace**
+## 01
+### Objective:
+1. install and use `curl` from the command line
+2. Construct and execute basic API requests using `curl`, including setting headers and inspecting output.
+3. Interpret the results of common API request
+## Resources
+1. [curl - Everything curl](https://intranet.hbtn.io/rltoken/eFoZ3X1pF42IdfyzLC3M3A)
+2. [Using curl to interact with HTTP API's](https://intranet.hbtn.io/rltoken/ieEz_6p00Tv67oobkwYHTA)
+3. Public API to Play with: [JSONPlaceholder](https://intranet.hbtn.io/rltoken/Ut3d3Tzd0l_sH0evg3GiMg)
+### Expected Output:
+1. Upon running `curl --version` and see supported protocols
+	* **curl** supports these protocols: DICT, FILE, FTP, FTPS, GO-
+       PHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS,
+       SMTP, SMTPS, TELNET or TFTP. The command is designed to work without user interaction
+2. Fetching posts from JSONPlaceholder should provide a JSON output of various posts, each having attributes like `userID`, `id`, `title` and `body`
+3. Fetching only headers should give a concise output showing status codes and headers without the actual content.
+4. Making POST request should yield a response from the server acknowledging the reception of the data.
+for JSONPlaceholder, it typically returns the created post with and `id` of `101` (since it doesn't actually save the new post, but simulates the creation)
