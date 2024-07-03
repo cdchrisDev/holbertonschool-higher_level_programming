@@ -8,4 +8,20 @@ The Representational State Transfer (REST) architecture is a set of constraints 
 4. **API Development with `http.server`**: Understand the basics of crafting and API from scratch using Python's built-in modules.
 5. **API Development with Flask Framework**: Focusing on routing, data management and scalability. `Flask` is meant to make something robust, professional and stable no matter how big can be.
 6. **API Security & Authentication**: Address the crusial aspects of security, knowing how to protect data transactions and ensure only authorized access to resources
-7. **API Standards & Documentation with OpenAPI**: standardized documentation is important to delivery API usage, understand and mantain the projects.
+7. **API Standards & Documentation with OpenAPI**: standardized documentation is important to delivery API usage, understand and mantain the projects
+# Tasks
+## Objective:
+At the end of this exercise, students should be able to:
+1. Differentiate between HTTP and HTTPS.
+2. Understand the basic working and structure of HTTP requests and responses.
+3. Recognize and explain the common HTTP methods and status codes.
+## Resources:
+1. [Mozilla Developer Network (MDN) - An Overview of HTTP](https://intranet.hbtn.io/rltoken/BKDRX5JLz6CKgQqC8HiUAA)
+2. [Difference between HTTP and HTTPS](https://intranet.hbtn.io/rltoken/ZM7mVhUBk2rRPkpsNh56HA)
+3. [List of HTTP status codes](https://intranet.hbtn.io/rltoken/vAPbpS8hUG2BFS4RcGx1WQ)
+### Expected Output
+1. A brief summary explaining the differences between HTTP and HTTPS.
+2. A depiction or outline of the structure of an HTTP request and response.
+3. Lists of common HTTP methods and status codes with their descriptions and possible use cases. For example:
+	* Method: GET, Description: Retrieves data, Use case: Fetching a web page or data from an API.
+	* Status Code: 404, Description: Not Found, Scenario: When a requested page or resource isn’t available on the server.
