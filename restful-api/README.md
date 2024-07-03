@@ -25,7 +25,14 @@ At the end of this exercise, students should be able to:
 2. A depiction or outline of the structure of an HTTP request and response.
 	
 3. Lists of common HTTP methods and status codes with their descriptions and possible use cases. For example:
-        * **GET: Read**                                                         + 200 (OK) list of entities. Use pagination, sorting and filtering to navigate big lists.                                       + 404 (Not found)
-        * **POST: Create**                                                      + 201 (Created), Response contains response similar to GET /user/{id} containing new ID.                                * **PATCH: Update**                                                     + [Batch API](https://doc.oroinc.com/api/batch-api/#web-services-api-batch-api)
-        * **DELETE: Delete**                                                    + 204 (No Content).                                             + 400 (Bad Request) if no filter is specified.
-        * **PUT: Create/Replace**
+* **GET: Read**
+	+ 200 (OK) list of entities. Use pagination, sorting and filtering to navigate big lists.
+	+ 404 (Not found)
+* **POST: Create**
+	+ 201 (Created), Response contains response similar to GET /user/{id} containing new ID.
+* **PATCH: Update**
+	+ [Batch API](https://doc.oroinc.com/api/batch-api/#web-services-api-batch-api)
+* **DELETE: Delete**
+	+ 204 (No Content).
+	+ 400 (Bad Request) if no filter is specified.
+* **PUT: Create/Replace**
