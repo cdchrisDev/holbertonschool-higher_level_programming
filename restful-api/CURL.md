@@ -25,3 +25,33 @@
 `curl -O https://flaviocopes.com/index.html`
 ## HTTP authentication
 `curl -u user:pass https//flaviocopes.com`
+## Set a different User Agent
+`curl --user-agent "my-user-agent" https://flaviocopes.com`
+## Inspecting details of the request and the response
+`curl --verbose -I https://flaviocopes.com/`
+```
+*   Trying 178.128.202.129...
+* TCP_NODELAY set
+* Connected to flaviocopes.com (178.128.202.129) port 443 (#0)
+* TLS 1.2 connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate: flaviocopes.com
+* Server certificate: Let's Encrypt Authority X3
+* Server certificate: DST Root CA X3
+> HEAD / HTTP/1.1
+> Host: flaviocopes.com
+> User-Agent: curl/7.54.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+< Cache-Control: public, max-age=0, must-revalidate
+Cache-Control: public, max-age=0, must-revalidate
+< Content-Type: text/html; charset=UTF-8
+Content-Type: text/html; charset=UTF-8
+< Date: Mon, 30 Jul 2018 08:08:41 GMT
+Date: Mon, 30 Jul 2018 08:08:41 GMT
+...
+```
+## Copying any browser network request to a curl command
+* When inspecting any network request using the **Chrome Developer Tools**, you have the option to copy that request to a curl request `copy as cURL`:
+`curl 'https://github.com/curl/curl' -H 'Connection: keep-alive' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' -H 'Upgrade-Insecure-Requests: 1' -H 'DNT: 1' -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' -H 'Referer: https://www.google.it/' -H 'Accept-Encoding: gzip, deflate, br' -H 'Accept-Language: en-US,en;q=0.9,it;q=0.8' -H 'Cookie: _octo=GH1.1.933116459.1507545550; _ga=GA1.2.643383860.1507545550; tz=Europe%2FRome; user_session=XXXXX; __Host-user_session_same_site=YYYYYY; dotcom_user=flaviocopes; logged_in=yes; has_recent_activity=1; _gh_sess=ZZZZZZ' --compressed`
