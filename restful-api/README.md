@@ -10,7 +10,7 @@ The Representational State Transfer (REST) architecture is a set of constraints 
 6. **API Security & Authentication**: Address the crusial aspects of security, knowing how to protect data transactions and ensure only authorized access to resources
 7. **API Standards & Documentation with OpenAPI**: standardized documentation is important to delivery API usage, understand and mantain the projects
 # Tasks
-## 00
+## 00 Basics of HTTP/HTTPS
 ### Objective:
 At the end of this exercise, students should be able to:
 1. Differentiate between HTTP and HTTPS.
@@ -37,7 +37,7 @@ At the end of this exercise, students should be able to:
 	+ 204 (No Content).
 	+ 400 (Bad Request) if no filter is specified.
 * **PUT: Create/Replace**
-## 01
+## 01 Consume data from an API using command line tools
 ### Objective:
 1. install and use `curl` from the command line
 2. Construct and execute basic API requests using `curl`, including setting headers and inspecting output.
@@ -58,3 +58,16 @@ At the end of this exercise, students should be able to:
 4. Making POST request should yield a response from the server acknowledging the reception of the data.
 for JSONPlaceholder, it typically returns the created post with and `id` of `101` (since it doesn't actually save the new post, but simulates the creation)
 	* `curl -X -d "title=foo&body=bar&userId=1" https://jsonplaceholder.typicode.com/post`
+## 02 Consuming and processing data form an API using python
+### Objective:
+1. Utilize the `requests` library to send HTTP requests and process responses
+2. Parse and manipulate JSON data using python
+3. Convert structured data into other formats
+## Resources:
+1. [Python Requests Lbrary](https://intranet.hbtn.io/rltoken/QCrinim3JezLwyeCsxZVhA)
+2. [Working with JSON data in python](https://intranet.hbtn.io/rltoken/D18g-Gb-2p9zPrFcLFF1uw)
+3. Public API to experiment with: [JSONPlaceholder](https://intranet.hbtn.io/rltoken/Ut3d3Tzd0l_sH0evg3GiMg)
+### Expected Output
+1. Afther the basic interaction script, you should have an output indicating a `200` status code, suggesting a successful GET request.
+2. When parsing JSON data, you should see printed titles of the posts
+3. After the data manipulation and version task, you should have a CSV file with coloumns `id`, `title` and `body`. Each row in the CSV should correspond to a post from the fetched data
