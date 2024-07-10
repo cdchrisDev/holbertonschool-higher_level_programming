@@ -1,5 +1,5 @@
-# This is restful api Python Module
 ## Introduction
+# This is restful api Python Module
 The Representational State Transfer (REST) architecture is a set of constraints that ensure a scalable, stateless, and cacheable communication system. This approach allows for the easy integration of web services, making them accessible to a wide range of applications.
 ## Learning Objectives
 1. **HTTP/HTTPS Basic**: Understanding principles of the web's primary protocol, how data transfer occurs and the differences between both
@@ -52,6 +52,9 @@ At the end of this exercise, students should be able to:
        PHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS,
        SMTP, SMTPS, TELNET or TFTP. The command is designed to work without user interaction
 2. Fetching posts from JSONPlaceholder should provide a JSON output of various posts, each having attributes like `userID`, `id`, `title` and `body`
+	* `curl -X GET https://jsonplaceholder.typicode.com/posts`
 3. Fetching only headers should give a concise output showing status codes and headers without the actual content.
+	* `curl -I https://jsonplaceholder.typicode.com/posts`
 4. Making POST request should yield a response from the server acknowledging the reception of the data.
 for JSONPlaceholder, it typically returns the created post with and `id` of `101` (since it doesn't actually save the new post, but simulates the creation)
+	* `curl -X -d "title=foo&body=bar&userId=1" https://jsonplaceholder.typicode.com/post`
