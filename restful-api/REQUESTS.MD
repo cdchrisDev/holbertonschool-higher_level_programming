@@ -45,8 +45,8 @@ r.json()
 r = requests.get('https://api.github.com/events', stream=True)
 r.raw
 ```
-    * `<urllib3.response.HTTPResponse object at 0x101194810>`
-`r.raw.read(10)`
+* `<urllib3.response.HTTPResponse object at 0x101194810>`
+* `r.raw.read(10)`
     * `b'\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\x03'`
 *You should use a pattern like this to save what is being streamed to a file*:
 ```
