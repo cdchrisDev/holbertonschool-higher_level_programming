@@ -7,4 +7,5 @@
 
 
 def is_kind_of_class(obj, a_class):
+    """True if its instance"""
     return isinstance(obj, a_class) or isinstance(a_class, type(obj))
