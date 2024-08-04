@@ -3,6 +3,7 @@
 
 
 class BaseGeometry:
+    '''A base geometry class'''
 
     def __init__(self):
         '''Constructor'''
