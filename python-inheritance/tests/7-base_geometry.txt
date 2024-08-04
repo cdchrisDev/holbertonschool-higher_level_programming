@@ -64,7 +64,7 @@ Traceback (most recent call last):
 ...
 TypeError: hello must be an integer
 
->>> bg.area():
+>>> bg.area()
 Traceback (most recent call last):
 ...
 TypeError: area() is not implemented
