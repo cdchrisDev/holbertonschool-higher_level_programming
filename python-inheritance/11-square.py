@@ -21,9 +21,8 @@ class Square(Rectangle):
         return self.__size ** 2
     
     def __print__(self):
-        """print the obj size
-        print(f"[Square] <{self.__size}/{self.__size}")"""
-        print(dir(self))
+        """print the obj size"""
+        print(f"[Square] <{self.__size}/{self.__size}")
 
     def __str__(self):
         """return the str rep of obj"""
