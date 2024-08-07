@@ -5,6 +5,6 @@
 * [What is a Container?](https://intranet.hbtn.io/rltoken/WZ5uIqgpptjRkb-9XLF05w)
 * [Containers 101](https://intranet.hbtn.io/rltoken/mkMZ5ioRkxIKpLtEpHFJzQ)<br />
 ### Docs
-* [Docker Official Documentation](https://intranet.hbtn.io/rltoken/9GqTEenqJQlVdB8YpcPyDg) and [Docker 101 Tutorial](https://intranet.hbtn.io/rltoken/gW8FAGBOmXBUUuaM2r_uOg)
-* [Docker compuse Documentation](https://intranet.hbtn.io/rltoken/DM0LcbneF3DIwttKdTYN1A)
-* [DevOpsCube](https://intranet.hbtn.io/rltoken/W5jcX3ywx6n5DUtwO1f4fg) and [linux.com](https://intranet.hbtn.io/rltoken/FuJBN2rDhK_FcJybBCJlWQ)
+* [Docker Official Documentation](docs.docker.com) and [Docker 101 Tutorial](https://www.docker.com/get-started/)
+* [Docker compuse Documentation](https://docs.docker.com/compose/)
+* [DevOpsCube](https://devopscube.com/build-docker-image/) and [linux.com](https://www.linux.com/training-tutorials/how-create-docker-image/)
