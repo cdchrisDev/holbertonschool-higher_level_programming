@@ -3,7 +3,7 @@
 Define two services in a Docker Compose YAML file:
 1. **PostgreSQL**: A relational database management system
 2. **pgAdming**: A web-based administration tool for PostgreSQL
-The main goals are:<br />
+# The main goals are:
 * Set up a private network that both containers will use.
 * Allow public access only from the pgAdmin container
 * Ensure pgAdmin can connect and manage the PostgreSQL database
