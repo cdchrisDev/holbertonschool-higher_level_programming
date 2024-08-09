@@ -16,7 +16,7 @@ def fetch_and_print_posts():
     """
     try:
         r.raise_for_status()
-    except request.RequestException as e:
+    except requests.RequestException as e:
         print(f"Failed to get data: {e}")
         return None
     finally:

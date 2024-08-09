@@ -71,3 +71,16 @@ for JSONPlaceholder, it typically returns the created post with and `id` of `101
 1. Afther the basic interaction script, you should have an output indicating a `200` status code, suggesting a successful GET request.
 2. When parsing JSON data, you should see printed titles of the posts
 3. After the data manipulation and version task, you should have a CSV file with coloumns `id`, `title` and `body`. Each row in the CSV should correspond to a post from the fetched data
+## 03 Develop a simple API using Python with the 'http.server' module
+### Objective:
+1. Set up a basic web server using the `http.server` module.
+2. Handle different types of HTTP request (GET, POST, etc).
+3. Serve JSON data in response to specific endpoints.
+## Resources:
+1. [Python docs: http.server - HTTP servers](https://intranet.hbtn.io/rltoken/PancDHec9OiEVMRM-oyk0w)
+2. [A simple example of using Python's http.server](https://intranet.hbtn.io/rltoken/BiyipvyreiKqOAWzWOuamg)
+### Expected Output
+1. On visiting `http://localhost:8000`, you should see the text "Hello, this is a simple API!`
+2. On accessing the endpoint `/data`, a JSON response with the sample data set should be returned: `{"name": "John", "age": 30, "city": "New York"}.`
+3. When visiting `/info`, you might see something like: `{"version": "1.0", "description": "A simple API built with http.server"}.`
+4. Accessing any other undefined endpoint should return a `404 Not found` status with a message "Endpoint not found".
