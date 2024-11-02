@@ -1,0 +1,39 @@
+# This is python INPUT and OUTPUT
+### Resources
+* [7.2. Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+* [8.7. Predefined Clean-up Actions](https://docs.python.org/3/tutorial/errors.html#predefined-clean-up-actions)
+* [Dive Into Python 3: Chapter 11. Files](https://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf) *(until “11.4 Binary Files” (included))*
+* [JSON encoder and decoder](https://docs.python.org/3/library/json.html)
+* [Learn to Program 8 : Reading / Writing Files](https://www.youtube.com/watch?v=EukxMIsNeqU)
+* [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/) *(ch. 8 p 180-183 and ch. 14 p 326-333)*
+* [sys package](https://docs.python.org/3/library/sys.html)
+## 0. Write a function that reads a text file (UTF8) and prints it to stdout:
+* **Prototype**: `def read_file(filename=""):`
+* You must use the `with` statement
+* You don’t need to manage `file permission` or `file doesn't exist` exceptions.
+* You are not allowed to import any module
+```
+guillaume@ubuntu:~/$ cat 0-main.py
+#!/usr/bin/python3
+read_file = __import__('0-read_file').read_file
+
+read_file("my_file_0.txt")
+
+guillaume@ubuntu:~/$ cat my_file_0.txt
+We offer a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers. 
+
+A school every software engineer would have dreamt of!
+guillaume@ubuntu:~/$ ./0-main.py
+We offer a truly innovative approach to education:
+focus on building reliable applications and scalable systems, take on real-world challenges, collaborate with your peers. 
+
+A school every software engineer would have dreamt of!guillaume@ubuntu:~/$ 
+```
+**SOLVED**
+```
+#!/usr/bin/python3
+def read_file(filename=""):
+    with open(filename, 'r', encoding="utf-8") as f:
+        print(f.read(), end="")
+```
